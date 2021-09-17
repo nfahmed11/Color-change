@@ -1,10 +1,11 @@
 //on click of button h1 is changed to display color code
 //on click of button, css background color is changed
 
-const backgroundColor = (document.querySelector("body")
-backgroundColor.style.backgroundColor ="blue";
+const bodyColor = document.querySelector("body");
+bodyColor.style.backgroundColor = "gray";
 
-const button = (document.querySelector("button").style.backgrounColor = "");
+const buttonColor = document.querySelector("button");
+buttonColor.style.backgroundColor = "#696969";
 
 button.addEventListener("click", function () {
   const r = Math.floor(Math.random() * 255);
