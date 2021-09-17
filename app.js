@@ -9,6 +9,7 @@ const button = document.querySelector("button");
 button.style.backgroundColor = "#696969";
 
 button.addEventListener("click", function () {
+  console.log("button clicked");
   const r = Math.floor(Math.random() * 255);
   const g = Math.floor(Math.random() * 255);
   const b = Math.floor(Math.random() * 255);
