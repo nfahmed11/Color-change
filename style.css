@@ -7,7 +7,6 @@ div {
 
 body {
   margin: 35vh;
-  background-color: gray;
 }
 
 button {
@@ -15,11 +14,12 @@ button {
   width: 315px;
   font-size: 4vh;
   background-color: gray;
+  filter: brightness(75%);
   box-shadow: 5px 10px black;
 }
 
 button:hover {
-  filter: brightness(55%);
+  filter: brightness(45%);
   transition-duration: 0.4s;
 }
 

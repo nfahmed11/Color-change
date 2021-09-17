@@ -4,8 +4,8 @@
 const bodyColor = document.querySelector("body");
 bodyColor.style.backgroundColor = "gray";
 
-const buttonColor = document.querySelector("button");
-buttonColor.style.backgroundColor = "#696969";
+const button = document.querySelector("button");
+button.style.backgroundColor = "#696969";
 
 button.addEventListener("click", function () {
   const r = Math.floor(Math.random() * 255);
@@ -13,9 +13,9 @@ button.addEventListener("click", function () {
   const b = Math.floor(Math.random() * 255);
 
   if (r < 90 || g < 90 || b < 90) {
-    h1Style.color = "white";
+    button.style.Color = "white";
   } else {
-    h1Style.color = "black";
+    button.color = "black";
   }
 
   const newColor = `rgb(${r}, ${g}, ${b})`;
@@ -23,7 +23,7 @@ button.addEventListener("click", function () {
   document.querySelector("button").style.backgroundColor = newColor;
 
   const h1 = document.querySelector("h1");
-  h1.innerHTML = `rgb(${r}, ${g}, ${b})`;
+  button.innerText = `rgb(${r}, ${g}, ${b})`;
 });
 
 // on click, new color will be generated
