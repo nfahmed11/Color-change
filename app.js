@@ -14,16 +14,14 @@ button.addEventListener("click", function () {
   const g = Math.floor(Math.random() * 255);
   const b = Math.floor(Math.random() * 255);
 
-  if (r < 90 || g < 90 || b < 90) {
-    button.style.Color = "white";
-  } else {
-    button.style.Color = "black";
-  }
-
   const newColor = `rgb(${r}, ${g}, ${b})`;
   document.querySelector("body").style.backgroundColor = newColor;
   document.querySelector("button").style.backgroundColor = newColor;
 
-  const h1 = document.querySelector("h1");
+  if (r < 90 || g < 90 || b < 90) {
+    button.style.color = "white";
+  } else {
+    button.style.color = "black";
+  }
   button.innerText = `rgb(${r}, ${g}, ${b})`;
 });
