@@ -1,5 +1,6 @@
-//on click of button h1 is changed to display color code
-//on click of button, css background color is changed
+// on click, new color will be generated
+//select new color and then select background color and and post to background color
+//add text under button to show new color
 
 const bodyColor = document.querySelector("body");
 bodyColor.style.backgroundColor = "gray";
@@ -15,7 +16,7 @@ button.addEventListener("click", function () {
   if (r < 90 || g < 90 || b < 90) {
     button.style.Color = "white";
   } else {
-    button.color = "black";
+    button.style.Color = "black";
   }
 
   const newColor = `rgb(${r}, ${g}, ${b})`;
@@ -25,7 +26,3 @@ button.addEventListener("click", function () {
   const h1 = document.querySelector("h1");
   button.innerText = `rgb(${r}, ${g}, ${b})`;
 });
-
-// on click, new color will be generated
-//select new color and then select background color and and post to background color
-//add text under button to show new color

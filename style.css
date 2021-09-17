@@ -11,7 +11,8 @@ body {
 
 button {
   border-radius: 43px;
-  width: 315px;
+  width: 400px;
+  height: 80px;
   font-size: 4vh;
   background-color: gray;
   filter: brightness(75%);
