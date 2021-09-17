@@ -1,15 +1,29 @@
+h1,
+h2,
 div {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-div {
-    display: flex;
-    justify-content: center;
+body {
+  margin: 35vh;
+  background-color: gray;
 }
 
 button {
-    margin: 20 px;
-    width: 100px;
-    height: 100 px;
+  border-radius: 43px;
+  width: 315px;
+  font-size: 4vh;
+  background-color: gray;
+  box-shadow: 5px 10px black;
+}
+
+button:hover {
+  filter: brightness(55%);
+  transition-duration: 0.4s;
+}
+
+button:active {
+  position: relative;
+  top: 2px;
 }
